@@ -16,9 +16,9 @@ const player3 = {
 export let players = [ player1, player2, player3 ]
 
 export let addScore = (index, score) => {
-    return Number(players[index].score) += Number(score);
+    return players[index].score += Number(score);
 }
 
 export let removeScore = (index, score) => {
-    return Number(players[index].score) -= Number(score);
+    return players[index].score -= Number(score);
 }

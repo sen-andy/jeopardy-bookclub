@@ -124,8 +124,9 @@ let dailyDouble = () => {
 
 for (let i = 0; i < doublePlayerUp.length; i++) {
     doublePlayerUp[i].addEventListener("click", () => {
-        if (isNaN(doubleInputs[i])) return;
-        let newScore = addScore(i, doubleInputs[i].value);
+        let inputValue = doubleInputs[i].value;
+        if (isNaN(Number(inputValue))) return;
+        let newScore = addScore(i, inputValue);
         scores[i].textContent = newScore;
         doubleMiniScores[i].textContent = newScore;
 
@@ -137,7 +138,8 @@ for (let i = 0; i < doublePlayerUp.length; i++) {
 
 for (let i = 0; i < doublePlayerDown.length; i++) {
     doublePlayerDown[i].addEventListener("click", () => {
-        if (isNaN(doubleInputs[i])) return;
+        let inputValue = doubleInputs[i].value;
+        if (isNaN(Number(inputValue))) return;
         let newScore = removeScore(i, doubleInputs[i].value);
         scores[i].textContent = newScore;
         doubleMiniScores[i].textContent = newScore;
@@ -186,7 +188,9 @@ finalButton.addEventListener("click", () => {
 
 for (let i = 0; i < finalPlayerUp.length; i++) {
     finalPlayerUp[i].addEventListener("click", () => {
-        let newScore = addScore(i, finalInputs[i].value);
+        let inputValue = finalInputs[i].value;
+        if (isNaN(Number(inputValue))) return;
+        let newScore = addScore(i, inputValue);
         scores[i].textContent = newScore;
         finalMiniScores[i].textContent = newScore;
 
@@ -201,7 +205,9 @@ for (let i = 0; i < finalPlayerUp.length; i++) {
 
 for (let i = 0; i < finalPlayerDown.length; i++) {
     finalPlayerDown[i].addEventListener("click", () => {
-        let newScore = removeScore(i, finalInputs[i].value);
+        let inputValue = finalInputs[i].value;
+        if (isNaN(Number(inputValue))) return;
+        let newScore = removeScore(i, inputValue);
         scores[i].textContent = newScore;
         finalMiniScores[i].textContent = newScore;
 
