@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/gameboard.css" />
+    <title>Jeopardy</title>
+  </head>
+  <body>
+    <main id="main" class="flex-column">
+      <div id="gameboard">
+        <button tabindex="-1" class="category">WHERE IS THE CAT?</button>
+        <button tabindex="-1" class="category">PUZZLES</button>
+        <button tabindex="-1" class="category">FUN PUNS</button>
+        <button tabindex="-1" class="category">NEW ART</button>
+        <button tabindex="-1" class="category">GROWING SALMON</button>
+        <button tabindex="-1" class="category">SOMETHING</button>
+        <button tabindex="-1" class="data-open-modal question">$200</button>
+        <button tabindex="-1" class="data-open-modal question">$200</button>
+        <button tabindex="-1" class="data-open-modal question">$200</button>
+        <button tabindex="-1" class="data-open-modal question">$200</button>
+        <button tabindex="-1" class="data-open-modal question">$200</button>
+        <button tabindex="-1" class="data-open-modal question">$200</button>
+        <button tabindex="-1" class="data-open-modal question">$400</button>
+        <button tabindex="-1" class="data-open-modal question">$400</button>
+        <button tabindex="-1" class="data-open-modal question">$400</button>
+        <button tabindex="-1" class="data-open-modal question">$400</button>
+        <button tabindex="-1" class="data-open-modal question">$400</button>
+        <button tabindex="-1" class="data-open-modal question">$400</button>
+        <button tabindex="-1" class="data-open-modal question">$600</button>
+        <button tabindex="-1" class="data-open-modal question">$600</button>
+        <button tabindex="-1" class="data-open-modal question">$600</button>
+        <button tabindex="-1" class="data-open-modal question">$600</button>
+        <button tabindex="-1" class="data-open-modal question">$600</button>
+        <button tabindex="-1" class="data-open-modal question">$600</button>
+        <button tabindex="-1" class="data-open-modal question">$800</button>
+        <button tabindex="-1" class="data-open-modal question">$800</button>
+        <button tabindex="-1" class="data-open-modal question">$800</button>
+        <button tabindex="-1" class="data-open-modal question">$800</button>
+        <button tabindex="-1" class="data-open-modal question">$800</button>
+        <button tabindex="-1" class="data-open-modal question">$800</button>
+        <button tabindex="-1" class="data-open-modal question">$1000</button>
+        <button tabindex="-1" class="data-open-modal question">$1000</button>
+        <button tabindex="-1" class="data-open-modal question">$1000</button>
+        <button tabindex="-1" class="data-open-modal question">$1000</button>
+        <button tabindex="-1" class="data-open-modal question">$1000</button>
+        <button tabindex="-1" class="data-open-modal question">$1000</button>
+      </div>
+      <div id="scoreboard">
+        <div class="player-score flex-column">
+          <p class="score">0</p>
+          <p class="contestant-1">Contestant 1</p>
+        </div>
+        <div class="player-score flex-column">
+          <p class="score">0</p>
+          <p class="contestant-2">Contestant 2</p>
+        </div>
+        <div class="player-score flex-column">
+          <p class="score">0</p>
+          <p class="contestant-3">Contestant 3</p>
+        </div>
+      </div>
+      <button tabindex="-1" id="next-round-link" class="primary-text">Final Jeopardy</button>
+
+      <dialog id="setup-modal">
+        <div id="setup-inner" class="flex-column">
+          <div id="setup-modal-container" class="flex-row">
+            <div class="setup-label">
+              <p>Contestant 1</p>
+              <input type="text">
+            </div>
+            <div class="setup-label">
+              <p>Contestant 2</p>
+              <input type="text">
+            </div>
+            <div class="setup-label">
+              <p>Contestant 3</p>
+              <input type="text">
+            </div>
+          </div>
+          <button id="save-name" tabindex="-1">Save Names</button>
+        </div>
+      </dialog>
+
+      <dialog id="data-modal">
+        <div id="player-controls" class="flex-column">
+          <h1 id="question-content"></h1>
+          <div id="player-buttons">
+            <div class="flex-column">
+              <p class="contestant-1"></p>
+              <div class="flex-row">
+                <button tabindex="-1" class="player-up primary-text enabled-button">Correct</button>
+                <button tabindex="-1" class="player-down primary-text enabled-button">Wrong</button>
+              </div>
+              <p class="mini-score">0</p>
+            </div>
+            <div class="flex-column">
+              <p class="contestant-2"></p>
+              <div class="flex-row">
+                <button tabindex="-1" class="player-up primary-text enabled-button">Correct</button>
+                <button tabindex="-1" class="player-down primary-text enabled-button">Wrong</button>
+              </div>
+              <p class="mini-score">0</p>
+            </div>
+            <div class="flex-column">
+              <p class="contestant-3"></p>
+              <div class="flex-row">
+                <button tabindex="-1" class="player-up primary-text enabled-button">Correct</button>
+                <button tabindex="-1" class="player-down primary-text enabled-button">Wrong</button>
+              </div>
+              <p class="mini-score">0</p>
+            </div>
+          </div>
+        </div>
+      </dialog>
+
+      <dialog id="modal-double">
+        <div id="player-controls" class="flex-column">
+          <div id="double-border">
+            <h1 id="double-question"></h1>
+          </div>
+          <div id="player-buttons">
+            <div class="flex-column">
+              <p class="contestant-1"></p>
+              <input class="double-input" type="text">
+              <div class="flex-row">
+                <button tabindex="-1" class="double-player-up primary-text enabled-button">Correct</button>
+                <button tabindex="-1" class="double-player-down primary-text enabled-button">Wrong</button>
+              </div>
+              <p class="double-mini-score">0</p>
+            </div>
+            <div class="flex-column">
+              <p class="contestant-2"></p>
+              <input class="double-input" type="text">
+              <div class="flex-row">
+                <button tabindex="-1" class="double-player-up primary-text enabled-button">Correct</button>
+                <button tabindex="-1" class="double-player-down primary-text enabled-button">Wrong</button>
+              </div>
+              <p class="double-mini-score">0</p>
+            </div>
+            <div class="flex-column">
+              <p class="contestant-3"></p>
+              <input class="double-input" type="text">
+              <div class="flex-row">
+                <button tabindex="-1" class="double-player-up primary-text enabled-button">Correct</button>
+                <button tabindex="-1" class="double-player-down primary-text enabled-button">Wrong</button>
+              </div>
+              <p class="double-mini-score">0</p>
+            </div>
+          </div>
+        </div>
+      </dialog>
+
+      <dialog id="modal-final">
+        <audio id="audio" controls>
+          <source src ="./assets/theme.mp3" type = "audio/mpeg">
+        </audio>
+        <div id="player-controls" class="flex-column">
+          <h1 id="final-category">Final Jeopardy</h1>
+          <div id="final-border">
+            <h1 id="final-question"></h1>
+          </div>
+          <div id="player-buttons">
+            <div class="flex-column">
+              <p class="contestant-1"></p>
+              <input class="final-input" type="text">
+              <div class="flex-row">
+                <button tabindex="-1" class="final-player-up primary-text enabled-button">Correct</button>
+                <button tabindex="-1" class="final-player-down primary-text enabled-button">Wrong</button>
+              </div>
+              <p class="final-mini-score">0</p>
+            </div>
+            <div class="flex-column">
+              <p class="contestant-2"></p>
+              <input class="final-input" type="text">
+              <div class="flex-row">
+                <button tabindex="-1" class="final-player-up primary-text enabled-button">Correct</button>
+                <button tabindex="-1" class="final-player-down primary-text enabled-button">Wrong</button>
+              </div>
+              <p class="final-mini-score">0</p>
+            </div>
+            <div class="flex-column">
+              <p class="contestant-3"></p>
+              <input class="final-input" type="text">
+              <div class="flex-row">
+                <button tabindex="-1" class="final-player-up primary-text enabled-button">Correct</button>
+                <button tabindex="-1" class="final-player-down primary-text enabled-button">Wrong</button>
+              </div>
+              <p class="final-mini-score">0</p>
+            </div>
+          </div>
+        </div>
+      </dialog>
+    </main>
+    <!-- Do not change the script source. Allows import/export to work. -->
+    <script type="module" src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/data.js"></script>
+  </body>
+</html>
