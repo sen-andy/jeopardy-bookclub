@@ -15,7 +15,7 @@ const data = [
     },
     {
       category: "Nature",
-      question: "What is the largest animal currently on Earth?",
+      question: "You write a book with a fictional tattoo and then the tattoo becomes real in the world and after that almost anything seems possible. She’d seen five of those tattoos, but that didn’t make it less extraordinary, seeing the way fiction can bleed into the world and leave a mark on someone’s skin.",
       answer: "Blue Whale",
     },
     {
