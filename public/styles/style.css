@@ -1,4 +1,4 @@
-/*  */
+/**/
 /** General **/
 
 * {
@@ -47,7 +47,7 @@ footer {
     gap: 20px;
 }
 
-/*  */
+/**/
 /** Text **/
 
 h1 {
@@ -65,7 +65,7 @@ h2 {
     background-color: lightgray;
 }
 
-/*  */
+/**/
 /** anchors and buttons **/
 
 a {
@@ -84,7 +84,7 @@ button {
     margin-right: 10vw;
 }
 
-/*  */
+/**/
 /** Players Things **/
 
 input {

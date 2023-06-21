@@ -2,144 +2,129 @@
 
 const data = [
     {
-      category: "Nature",
-      question: `<iframe
-      width="896"
-      height="504"
-      src="./assets/1.mp4"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>`,
-      answer: "4",
+      category: "Quoteable Quotes",
+      question: `“I try to refrain from certain words,” he said. “Thief is one of them. This is going to sound very strange, but I don’t feel like a thief.”`,
+      answer: "The Feather Thief",
     },
     {
-      category: "Nature",
-      question: "You write a book with a fictional tattoo and then the tattoo becomes real in the world and after that almost anything seems possible. She’d seen five of those tattoos, but that didn’t make it less extraordinary, seeing the way fiction can bleed into the world and leave a mark on someone’s skin.",
-      answer: "Blue Whale",
+      category: "Quoteable Quotes",
+      question: `“If a god is a thing that has absolute power over us, then in this world there are many. There are gods that we choose and gods that we can't avoid; there are gods that we pray to and gods that prey on us; there are dreams that become gods and nightmares that do, as well.”`,
+      answer: "Sharks in the Time of Saviors",
     },
     {
-      category: "Nature",
-      question: "What is the hottest planet in the Solar System?",
-      answer: "Venus",
+      category: "Quoteable Quotes",
+      question: `“Imagine being a god, she thought, and still needing to tell everyone how impressive you were.”`,
+      answer: "Stone Blind",
     },
     {
-      category: "Nature",
-      question: "What is the first element on the periodic table?",
-      answer: "Hydrogen",
+      category: "Quoteable Quotes",
+      question: `“Mortals have always been frightened of the night's velvet embrace and the creatures that walk in it, and yet they find themselves mesmerized by it.”`,
+      answer: "Gods of Jade and Shadow",
     },
     {
-      category: "Nature",
-      question: "Which gas forms about 78% of the Earth's atmosphere?",
-      answer: "Nitrogen",
+      category: "Quoteable Quotes",
+      question: `“You write a book with a fictional tattoo and then the tattoo becomes real in the world and after that almost anything seems possible. She’d seen five of those tattoos, but that didn’t make it less extraordinary, seeing the way fiction can bleed into the world and leave a mark on someone’s skin.”`,
+      answer: "Sea of Tranquility",
     },
     {
-      category: "Animals",
-      question: "What is the fastest  land animal?",
-      answer: "Cheetah",
+      category: "This is Us",
+      question: "Which three book club members were or are currently pregnant in 2023?",
+      answer: "Val, Virginia, Crista",
     },
     {
-      category: "Animals",
-      question: "What is the scientific name for modern day humans?",
-      answer: "Homo Sapiens",
+      category: "This is Us",
+      question: "During the discussion of The Measure, David said he’d look in his books and then do what?",
+      answer: "Put his affairs in order to take care of his family",
     },
     {
-      category: "Animals",
-      question:
-        "The Kakapo is a large, flightless, nocturnal parrot native to which country?",
-      answer: "New Zealand",
+      category: "This is Us",
+      question: "The winter book club retreat took place during what major weather event?",
+      answer: "Polar Vortex",
     },
     {
-      category: "Animals",
-      question: "Hippocampus is the Latin name for which marine creature?",
-      answer: "Seahorse",
+      category: "This is Us",
+      question: "What commotion caused multiple people to DM Quinn?",
+      answer: "Cersei playing with a toy that looked like a sexual object that was censored out",
     },
     {
-      category: "Animals",
-      question: "What is Grumpy Cat's real name?",
-      answer: "Tardar Sauce",
+      category: "This is Us",
+      question: "Name three book club members that have joined a discussion from a moving vehicle",
+      answer: "Benn, Val, Meghan"
     },
     {
-      category: "Computers",
-      question: "What does GHz stand for?",
-      answer: "Gigahertz",
+      category: "People & Places",
+      question: "Which two books feature a man named Edwin?",
+      answer: "Feather Thief and Sea of Tranquility",
     },
     {
-      category: "Computers",
-      question: "HTML is what type of language?",
-      answer: "Markup Language",
+      category: "People & Places",
+      question: "Who is Dr. Simon Baron-Cohen as he relates to a book we read?",
+      answer: "The doctor who diagnosed Edwin with asperger’s in The Feather Thief ",
     },
     {
-      category: "Computers",
-      question: "What amount of bits commonly equals one byte?",
-      answer: "8",
+      category: "People & Places",
+      question: "Which book takes place in Fell, New York? ",
+      answer: "What are the three miracles in performance order, in the ringmaster’s magic show in Thousand Crimes?",
     },
     {
-      category: "Computers",
-      question: "In computing, what does MIDI stand for?",
-      answer: "Musical Instrument Digital Interface",
+      category: "People & Places",
+      question: "Which book depicts a supernatural evil rising in an alternate history of 1920s Macon, Georgia?",
+      answer: "Ring Shout",
     },
     {
-      category: "Computers",
-      question: "In web design, what does CSS stand for?",
-      answer: "Cascading Style Sheet",
+      category: "People & Places",
+      question: "What are the three miracles in performance order, in the ringmaster’s magic show in Thousand Crimes?",
+      answer: "Proteus the changing man, Hunter Reed the true ventriloquist/telepathy, the fireproof woman",
     },
     {
-      category: "Mythology",
-      question:
-        "Who was the only god from Greece who did not get a name change in Rome?",
-      answer: "Apollo",
+      category: "That Happened",
+      question: "In Nickel Boys, what was the original event that sent Elwood to Nickel Academy?",
+      answer: "Falsely accused of stealing a car",
     },
     {
-      category: "Mythology",
-      question:
-        "Who in Greek mythology, who led the Argonauts in search of the Golden Fleece?",
-      answer: "Jason",
+      category: "That Happened",
+      question: "In Gods of Jade and Shadow, how is Hun-Kame awakened?",
+      answer: "A shard of his bone pierces her thumb (in a forbidden chest in her grandfather’s room)",
     },
     {
-      category: "Mythology",
-      question:
-        "This Greek goddess's name was chosen for the dwarf planet responsible for discord on Pluto's classification amongst astronomers.",
-      answer: "Eris",
+      category: "That Happened",
+      question: "Which book contains the hashtag #strungtogether?",
+      answer: "The Measure",
     },
     {
-      category: "Mythology",
-      question:
-        "Which Greek and Roman god was known as the god of music, truth and prophecy, healing, the sun and light, plague, poetry, and more?",
-      answer: "Apollo",
+      category: "That Happened",
+      question: "What was Simon Hess’s occupation in Sun Down Motel?",
+      answer: "Traveling Salesman",
     },
     {
-      category: "Mythology",
-      question:
-        "Which figure from Greek mythology traveled to the underworld to return his wife Eurydice to the land of the living?",
-      answer: "Orpheus",
+      category: "That Happened",
+      question: "In Night of the Living Rez, David discovers a jar of corn, hair, and what else under the steps of the house?",
+      answer: "Teeth",
     },
     {
-      category: "History",
-      question: "How many manned moon landings have there been?",
-      answer: "6",
+      category: "Big Picture",
+      question: "In Ring Shout, what major event is the catalyst of many white people being swayed into believing the narrative of the Ku Klux Klan as saviors and African-Americans as evil?",
+      answer: "The release of the movie, Birth of a Nation",
     },
     {
-      category: "History",
-      question:
-        "The original Roman alphabet lacked the following letters EXCEPT:",
-      answer: "X",
+      category: "Big Picture",
+      question: `Which book features, “the world’s most fucked-up version of the chicken-or-the-egg conundrum?"`,
+      answer: "The Measure",
     },
     {
-      category: "History",
-      question: "The collapse of the Soviet Union took place in which year?",
-      answer: "1991",
+      category: "Big Picture",
+      question: "Which two books, inspired by true events, primarily focus on hope vs realism while living in marginalized communities?",
+      answer: "The Nickel Boys and Night of the Living Rez",
     },
     {
-      category: "History",
-      question: "What was Manfred von Richthofen's nickname?",
-      answer: "The Red Baron",
+      category: "Big Picture",
+      question: "Name three books that focus on a quest for revenge.",
+      answer: "Thousand Crimes, Stone Blind, Gods of Jade and Shadow - will accept Sun Down Hotel",
     },
     {
-      category: "History",
-      question:
-        "Which modern day country is the region that was known as Phrygia in ancient times?",
-      answer: "Turkey",
+      category: "Big Picture",
+      question: "In Sharks in the Time of Saviors, Noa fails to save an animal in the cemetery as a child which acts symbolizes a lack of control. What was this animal?",
+      answer: "Owl",
     },
     {
       category: "General",
@@ -169,10 +154,19 @@ const data = [
     },
     {
       category: "Final",
-      question: "What name was the bootcamp formerly known as? What name was the bootcamp formerly known as? What name was the bootcamp formerly known as?",
-      answer: "Burlington Code Academy",
+      question: "What was the name of the female ghost that haunted the Sun Down Motel?",
+      answer: "Betty",
     },
   ];
+
+  // `<iframe
+  //     width="896"
+  //     height="504"
+  //     src="./assets/1.mp4"
+  //     frameborder="0"
+  //     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  //     allowfullscreen
+  //   ></iframe>`,
   
   export default data;
   
