@@ -5,15 +5,15 @@ const app = express();
 const port = 5500;
 
 const setCustomCacheControl = (res, path) => {
-    if (serveStatic.mime.lookup(path) === 'text/html') {
-      res.setHeader('Cache-Control', 'public, max-age=0')
-    }
+  if (serveStatic.mime.lookup(path) === 'text/html') {
+    res.setHeader('Cache-Control', 'public, max-age=0');
   }
+}
 
 app.use(serveStatic(path.join(__dirname, 'public'), {
-    setHeaders: setCustomCacheControl
-  }));
+  setHeaders: setCustomCacheControl
+}));
 
 app.listen(port, () => {
-    console.log(`server started on port ${port}`);
+  console.log(`server started on port ${port}`);
 });

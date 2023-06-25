@@ -1,10 +1,15 @@
+@font-face {
+    font-family: "Korinna";
+    src: url("../assets/OPTIKorinna-Agency.otf");
+}
+
 /*  */
 /** Gameboard **/
 
 #audio {
     position: fixed;
     top: 10px;
-    left: 10px;
+    left: 100px;
 }
 
 #gameboard {
@@ -36,7 +41,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
+    padding: 20px 100px;
     border-radius: 5px;
 }
 
@@ -81,11 +86,12 @@
 #final-question,
 #double-question {
     color: whitesmoke;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 4em;
+    font-family: "Korinna", Courier, monospace;
+    font-size: 7em;
     border-radius: 5px;
     font-weight: 900;
-    text-shadow: 3px 3px 0 #112A46;
+    text-shadow: 5px 5px 0 #112A46;
+    padding: 0 100px;
 }
 
 .category,
@@ -165,12 +171,22 @@
 /* ? media queries and chaos */
 
 @media screen and (min-width: 1300px) {
+    #gameboard > button {
+        max-height: 130px;
+        max-width: 260px;
+        border: 1px solid #112A46;
+    }
+
+    #question-content {
+        font-size: 7em;
+    }
+
     .question {
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .category {
-        font-size: 1.3em;
+        font-size: 2em;
     }
 }
 
