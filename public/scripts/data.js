@@ -4,7 +4,9 @@ const data = [
     {
       money: 200,
       category: "Quoteable Quotes",
-      question: `“I try to refrain from certain words,” he said. “Thief is one of them. This is going to sound very strange, but I don’t feel like a thief.”`,
+      question: `<video height="1000" controls autoplay>
+      <source src="./assets/QQ_100.mp4" type="video/mp4">
+    </video>`,
     },
     {
       money: 200,
@@ -28,22 +30,17 @@ const data = [
     },
     {
       money: 200,
-      category: "General",
-      question: `<iframe
-      width="896"
-      height="504"
-      src="./assets/1.mp4"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>`,
+      category: "Gotcha Covered",
+      question: `<img src="./assets/100_photo.png" />`,
     },
     
     
     {
       money: 400,
       category: "Quoteable Quotes",
-      question: `“If a god is a thing that has absolute power over us, then in this world there are many. There are gods that we choose and gods that we can't avoid; there are gods that we pray to and gods that prey on us; there are dreams that become gods and nightmares that do, as well.”`,
+      question: `<video height="1000" controls autoplay>
+      <source src="./assets/QQ_200.mp4" type="video/mp4">
+    </video>`,
     },
     {
       money: 400,
@@ -67,22 +64,17 @@ const data = [
     },
     {
       money: 400,
-      category: "General",
-      question:  `<iframe
-      width="896"
-      height="504"
-      src="./assets/1.mp4"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>`,
+      category: "Gotcha Covered",
+      question: `<img src="./assets/200_photo.png" />`,
     },
     
 
     {
       money: 600,
       category: "Quoteable Quotes",
-      question: `“Imagine being a god, she thought, and still needing to tell everyone how impressive you were.”`,
+      question: `<video height="1000" controls autoplay>
+      <source src="./assets/QQ_300.mp4" type="video/mp4">
+    </video>`,
     },
     {
       money: 600,
@@ -106,22 +98,17 @@ const data = [
     },
     {
       money: 600,
-      category: "General",
-      question:  `<iframe
-      width="896"
-      height="504"
-      src="./assets/1.mp4"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>`,
+      category: "Gotcha Covered",
+      question: `<img src="./assets/300_photo.png" />`,
     },
 
 
     {
       money: 800,
       category: "Quoteable Quotes",
-      question: `“Mortals have always been frightened of the night's velvet embrace and the creatures that walk in it, and yet they find themselves mesmerized by it.”`,
+      question: `<video height="1000" controls autoplay>
+      <source src="./assets/QQ_400.mp4" type="video/mp4">
+    </video>`,
     },
     {
       money: 800,
@@ -144,22 +131,17 @@ const data = [
     },
     {
       money: 800,
-      category: "General",
-      question:  `<iframe
-      width="896"
-      height="504"
-      src="./assets/1.mp4"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>`,
+      category: "Gotcha Covered",
+      question: `<img src="./assets/400_photo.png" />`,
     },
 
 
     {
       money: 1000,
       category: "Quoteable Quotes",
-      question: `“You write a book with a fictional tattoo and then the tattoo becomes real in the world and after that almost anything seems possible. She’d seen five of those tattoos, but that didn’t make it less extraordinary, seeing the way fiction can bleed into the world and leave a mark on someone’s skin.”`,
+      question: `<video height="1000" controls autoplay>
+      <source src="./assets/QQ_500.mp4" type="video/mp4">
+    </video>`,
     },
     {
       money: 1000,
@@ -183,15 +165,8 @@ const data = [
     },
     {
       money: 1000,
-      category: "General",
-      question:  `<iframe
-      width="896"
-      height="504"
-      src="./assets/1.mp4"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>`,
+      category: "Gotcha Covered",
+      question: `<img src="./assets/500_photo.png" />`,
     },
     {
       money: 2000,
