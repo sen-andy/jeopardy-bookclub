@@ -4,7 +4,7 @@ const data = [
     {
       money: 200,
       category: "Quoteable Quotes",
-      question: `<video height="1000" controls autoplay>
+      question: `<video height="700" controls autoplay fullscreen>
       <source src="./assets/QQ_100.mp4" type="video/mp4">
     </video>`,
     },
@@ -38,7 +38,7 @@ const data = [
     {
       money: 400,
       category: "Quoteable Quotes",
-      question: `<video height="1000" controls autoplay>
+      question: `<video height="700" controls autoplay>
       <source src="./assets/QQ_200.mp4" type="video/mp4">
     </video>`,
     },
@@ -72,7 +72,7 @@ const data = [
     {
       money: 600,
       category: "Quoteable Quotes",
-      question: `<video height="1000" controls autoplay>
+      question: `<video height="700" controls autoplay>
       <source src="./assets/QQ_300.mp4" type="video/mp4">
     </video>`,
     },
@@ -106,7 +106,7 @@ const data = [
     {
       money: 800,
       category: "Quoteable Quotes",
-      question: `<video height="1000" controls autoplay>
+      question: `<video height="700" controls autoplay>
       <source src="./assets/QQ_400.mp4" type="video/mp4">
     </video>`,
     },
@@ -139,7 +139,7 @@ const data = [
     {
       money: 1000,
       category: "Quoteable Quotes",
-      question: `<video height="1000" controls autoplay>
+      question: `<video height="700" controls autoplay>
       <source src="./assets/QQ_500.mp4" type="video/mp4">
     </video>`,
     },

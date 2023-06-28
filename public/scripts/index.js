@@ -257,7 +257,6 @@ for (let i = 0; i < finalPlayerDown.length; i++) {
         finalPlayerUp[i].classList.add("disabled-button");
 
         playerCount++;
-
         if (playerCount === 3) {
             endGame();
         }
@@ -268,10 +267,11 @@ finalBorder.addEventListener("click", e => {
     finalBorder.style.backgroundColor = "transparent";
     finalQuestion.textContent = data[30].question;
     document.body.style.overflowY = "hidden";
+    document.querySelector("#final-category").remove();
 });
 
 let endGame = () => {
-    questionContent.textContent = getWinner();
+    finalQuestion.textContent = getWinner();
 }
 
 
